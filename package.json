@@ -1,0 +1,17 @@
+{
+  "name": "rpm-bluetooth",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm run dev:backend & npm run dev:frontend -- --open",
+    "dev:backend": "npm -w backend run dev",
+    "dev:frontend": "npm -w frontend run dev",
+    "scan": "npm -w backend run scan",
+    "build": "npm -w backend run build && npm -w frontend run build"
+  },
+  "description": "BLE RPM sensor reader with real-time dashboard"
+}
