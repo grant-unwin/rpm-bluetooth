@@ -74,14 +74,33 @@ If prompted to install Xcode Command Line Tools, click **Install** and wait for 
 
 ## Step 3: Download the Project
 
+There are two ways to get the code:
+
+### Option A: Clone with Git (recommended)
+
 Open Terminal (macOS) or Command Prompt (Windows) and run:
 
 ```
-git clone https://github.com/yourusername/rpm-bluetooth.git
+git clone https://github.com/grant-unwin/rpm-bluetooth.git
 cd rpm-bluetooth
 ```
 
-> Replace `yourusername` with the actual GitHub username or URL where this project is hosted.
+### Option B: Download as ZIP (no Git required)
+
+If you don't want to install Git, you can download the project as a ZIP file directly from GitHub:
+
+1. Go to https://github.com/grant-unwin/rpm-bluetooth
+2. Click the green **"<> Code"** button
+3. Click **"Download ZIP"**
+
+![How to download the ZIP from GitHub](docs/github-download.png)
+
+4. Extract the ZIP file (double-click it on macOS, or right-click > "Extract All" on Windows)
+5. Open Terminal (macOS) or Command Prompt (Windows) and navigate into the extracted folder:
+   ```
+   cd Downloads/rpm-bluetooth-main
+   ```
+   > The folder may be called `rpm-bluetooth-main` (GitHub adds `-main` to ZIP downloads).
 
 ---
 
