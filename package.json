@@ -4,12 +4,16 @@
   "version": "1.0.0",
   "workspaces": [
     "backend",
-    "frontend"
+    "frontend",
+    "mobile"
   ],
   "scripts": {
     "dev": "npm run dev:backend & npm run dev:frontend -- --open",
     "dev:backend": "npm -w backend run dev",
     "dev:frontend": "npm -w frontend run dev",
+    "dev:mobile": "npm -w mobile run start",
+    "mobile:build:dev": "npm -w mobile run build:dev",
+    "mobile:build:apk": "npm -w mobile run build:apk",
     "scan": "npm -w backend run scan",
     "build": "npm -w backend run build && npm -w frontend run build"
   },
